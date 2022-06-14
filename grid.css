@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(38, 40, 53);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  color: aqua;
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+main {
+  display: grid;
+  width: 55rem;
+  height: 35rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one one two"
+    "three four four"
+    "three five five";
+  gap: 9px;
+}
+.one {
+  background: rgb(235, 76, 14);
+  grid-area: one;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.two {
+  background: rgb(228, 171, 15);
+  grid-area: two;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.three {
+  background: green;
+  grid-area: three;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.four {
+  background: rgb(16, 142, 173);
+  grid-area: four;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.five {
+  background: rgb(16, 142, 173);
+  grid-area: five;
+  justify-self: stretch;
+  align-self: stretch;
+}
